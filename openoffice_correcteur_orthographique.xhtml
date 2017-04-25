@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><?xml-stylesheet href="/mathmlc2p.xsl" type="text/xsl"?><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>openoffice_correcteur_orthographique</title>
+<link rel="alternate" type="application/rss+xml" title="rss" href="/rss.xml"/>
+<link rel="shortcut icon" href="/favicon.png" type="image/x-icon"/>
+</head>
+<body>
+<tt>
+2005-07-17 11:06:27 - OpenOffice 2 : correcteur orthographique<br/>
+<br/>
+En installant la version 2 d'OpenOffice, je n'arrivais pas à faire fonctionner le correcteur orthographique. Pourtant j'avais bien installé le dictionnaire mySpell (français) comme indiqué. En cherchant sur le web j'ai vu qu'en réinstallant OpenOffice version 1 en parallèle ça devait marcher. En effet ça marche ; mais on peut même s'en passer, il suffit de créer le lien suivant:<br/>
+<br/>
+cd /usr/share/myspell/dicts<br/>
+ln -s /etc/openoffice/dictionary.lst<br/>
+<br/>
+Ensuite il faut faire:<br/>
+<br/>
+Tools-&gt;Options-&gt;Language Settings-&gt;Languages<br/>
+Default languages for documents<br/>
+Western: French (France)<br/>
+<br/>
+Tools-&gt;Options-&gt;Language Settings-&gt;Writing Aids<br/>
+Available language modules<br/>
+OpenOffice.org MySpell SpellChecker<br/>
+Language: French (France)<br/>
+<br/>
+Packages Debian à installer:<br/>
+<br/>
+openoffice.org2<br/>
+myspell-fr-gut<br/>
+<br/>
+<a href="openoffice_correcteur_orthographique.xhtml">openoffice_correcteur_orthographique</a> - <a href="informatique.xhtml">informatique</a> - <a href="index.xhtml">index</a><br/>
+</tt>
+</body>
+</html>

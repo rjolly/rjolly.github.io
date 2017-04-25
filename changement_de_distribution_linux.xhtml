@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><?xml-stylesheet href="/mathmlc2p.xsl" type="text/xsl"?><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>changement_de_distribution_linux</title>
+<link rel="alternate" type="application/rss+xml" title="rss" href="/rss.xml"/>
+<link rel="shortcut icon" href="/favicon.png" type="image/x-icon"/>
+</head>
+<body>
+<tt>
+2005-01-19 18:33:29 - Changement de distribution Linux<br/>
+<br/>
+Mon ancien système (Fedora Core 2) ayant planté : système figé (sans doute à cause du driver winmodem propriétaire, j'étais en train de surfer avec Mozilla) + fsck échoué, j'en ai profité pour installer une autre distribution sur mon portable (EasyNote E1245) : la Knoppix 3.6 <a href="http://web.archive.org/web/20050127052429/http://www.dppresse.com/pl.htm">http://web.archive.org/web/20050127052429/http://www.dppresse.com/pl.htm</a> . Tout marche à peu près bien, à part quelques problèmes USB que je n'avais pas avec Fedora:<br/>
+<br/>
+- que ce soit pour mon adaptateur série ou pour ma clé USB, le port tombe en carafe au bout d'environ 4h d'inactivité. Il faut alors rebooter le système.<br/>
+- pour fonctionner, mon adaptateur midi nécessite qu'après le boot, je décharge le module du driver par un:<br/>
+<br/>
+modprobe -r usb_midi<br/>
+<br/>
+, et que je débranche/rebranche le câble. D'autre part, j'ai dû changer dans le fichier /etc/X11/XF86Config-4<br/>
+<br/>
+Section &quot;Device&quot;<br/>
+        Driver      &quot;savage&quot;<br/>
+par:<br/>
+        Driver      &quot;vesa&quot;<br/>
+<br/>
+pour avoir un taux de rafraîchissement correct de l'écran (éliminer le clignotement). Il a fallu également que j'ajoute les paramètres du noyau suivants pour avoir un clavier français et faire marcher Alsa:<br/>
+<br/>
+lang=fr alsa=via82xx<br/>
+<br/>
+Sans Alsa, les fichiers sons et la bande sonore des vidéos sont lus à 48kHz au lieu de 44.1kHz (avec respectivement Xmms par exemple et Xine), ce qui est trop aigü d'un demi-ton et qui saute (pour les vidéos). En explorant les possiblités sonores de la machine, je me suis rendu compte avec horreur que le port microphone est mono. Je comptais utiliser l'option &quot;Disable Mic Boost&quot; présente dans le mixer Alsa pour numériser des vieux vinyles, mais j'en suis pour mes frais. Les portables avec un port &quot;Line In&quot; sont extrèmement rares, et je soupçonne que l'industrie du disque n'y est pas pour rien.<br/>
+<br/>
+<a href="changement_de_distribution_linux.xhtml">changement_de_distribution_linux</a> - <a href="informatique.xhtml">informatique</a> - <a href="index.xhtml">index</a><br/>
+</tt>
+</body>
+</html>

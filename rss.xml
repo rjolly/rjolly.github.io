@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0">
+  <channel>
+  <title>Raphael Jolly's weblog</title>
+  <link>http://rjolly.github.io/</link>
+  <description></description>
+  <language>fr</language>
+  <item>
+    <title>Installer Linux sur un Thomson NEO14-32WC</title>
+    <link>http://rjolly.github.io/installer_linux_sur_un_thomson_neo14_32wc.xhtml</link>
+    <description></description>
+    <pubDate>Thu, 31 Sep 2017 01:49:50 +0000</pubDate>
+  </item>
+  <item>
+    <title>Pourquoi il est important de ne pas avoir d'enfants</title>
+    <link>http://rjolly.github.io/stallman_pourquoi_important_pas_avoir_enfants.xhtml</link>
+    <description>Par Richard Stallman</description>
+    <pubDate>Mon, 1 Oct 2012 15:25:50 +0000</pubDate>
+  </item>
+  <item>
+    <title>Tonight I took a picture of the moon</title>
+    <link>http://rjolly.github.io/picture_of_the_moon.xhtml</link>
+    <description></description>
+    <pubDate>Sun, 30 Sep 2012 15:25:50 +0000</pubDate>
+  </item>
+  <item>
+    <title>L'avion roi est nu</title>
+    <link>http://rjolly.github.io/avion_roi_nu.xhtml</link>
+    <description>Les 6 et 8 juin 2012, Pierre-Emmanuel Neurohr s'est opposé par deux fois au mouvement des avions sur le site de l'aéroport Charles-de-Gaulle.</description>
+    <pubDate>Wed, 19 Sep 2012 15:25:50 +0000</pubDate>
+  </item>
+  </channel>
+</rss>
